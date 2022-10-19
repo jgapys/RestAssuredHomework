@@ -1,10 +1,12 @@
 package base;
 
 import configuration.AppProperties;
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,15 +21,16 @@ public class TestBase {
     }
 
     public static RequestSpecification getRequestSpec() {
-        return new RequestSpecBuilder()
+        return RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(System.getProperty("baseUri"))
                 .setBasePath(System.getProperty("weatherPath"))
                 .addParam("appId", System.getProperty("appId"))
+                .setContentType(ContentType.JSON)
                 .build();
     }
 
     public static RequestSpecification getWeatherRequestSpec(String cityName, String countrySymbol, int cityId) {
-        return new RequestSpecBuilder()
+        return RestAssured.requestSpecification = new RequestSpecBuilder()
                 .addParam("name", cityName)
                 .addParam("sys.country", countrySymbol)
                 .addParam("id", cityId)
