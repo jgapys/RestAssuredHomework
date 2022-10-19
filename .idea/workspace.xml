@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfb70eda-26e6-47b4-a4c4-84f93b66cc25" name="Changes" comment="">
+    <list default="true" id="bfb70eda-26e6-47b4-a4c4-84f93b66cc25" name="Changes" comment="Adding an assertion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/weatherData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/weatherData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/weather/WeatherAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/weather/WeatherAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +95,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666091942009</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding an assertion">
+      <created>1666167187558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666167187558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,5 +115,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding an assertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding an assertion" />
   </component>
 </project>
